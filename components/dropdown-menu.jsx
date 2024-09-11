@@ -1,41 +1,52 @@
-import Link from "next/link";
+'use client';
 
-import { IoMdArrowDropdown } from "react-icons/io";
-import { IoMdArrowDropright } from "react-icons/io";
+import Link from 'next/link';
+
+import { IoMdArrowDropdown } from 'react-icons/io';
+import { IoMdArrowDropright } from 'react-icons/io';
+
+import { useState } from 'react';
 
 
 const DropdownMenu = () => {
+
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+   const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+   };
+
    return (
-      <main id="dropdown">
-         <button className="dropdown-toggle">
+      <main id='dropdown'>
+         <button className={`dropdown-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <span>Menu</span>
-            <IoMdArrowDropdown />
+            <IoMdArrowDropdown className='icon' />
          </button>
 
-         <ul className="menu">
-            <li className="menu-item"><Link href="#">Italian</Link></li>
-            <li className="menu-item"><Link href="#">Chinese</Link></li>
-            <li className="menu-item dropdown">
-               <Link href="#" className="submenu-toggle">
+         <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
+            <li className='menu-item'><Link href='#'>Italian</Link></li>
+            <li className='menu-item'><Link href='#'>Chinese</Link></li>
+            <li className='menu-item dropdown'>
+               <Link href='#' className='submenu-toggle'>
                   <span>Healthy Options</span>
-                  <IoMdArrowDropright />
+                  <IoMdArrowDropright className='icon' />
                </Link>
-               <ul className="submenu">
-                  <li className="submenu-item"><Link href="#">Vegetarian</Link></li>
-                  <li className="submenu-item"><Link href="#">Chicken</Link></li>
+               <ul className='submenu'>
                   {/* More Submenu Items */}
+                  <li className='submenu-item'><Link href='#'>Vegetarian</Link></li>
+                  <li className='submenu-item'><Link href='#'>Chicken</Link></li>
                </ul>
             </li>
-            <li className="menu-item"><Link href="#">Mexican</Link></li>
-            <li className="menu-item dropdown">
-               <Link href="#" className="submenu-toggle">
+            <li className='menu-item'><Link href='#'>Mexican</Link></li>
+            <li className='menu-item dropdown'>
+               <Link href='#' className='submenu-toggle'>
                   <span>Specials</span>
-                  <IoMdArrowDropright />
+                  <IoMdArrowDropright className='icon' />
                </Link>
-               <ul className="submenu">
+               <ul className='submenu'>
                   {/* SubMenu Items */}
-                  <li className="submenu-item"><Link href="#">Vegetarian</Link></li>
-                  <li className="submenu-item"><Link href="#">Chicken</Link></li>
+                  <li className='submenu-item'><Link href='#'>Vegetarian</Link></li>
+                  <li className='submenu-item'><Link href='#'>Chicken</Link></li>
                </ul>
             </li>
          </ul>
