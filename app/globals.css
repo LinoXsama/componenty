@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBALS RESET */
 
 *,
 *::before,
@@ -35,8 +36,11 @@ li,
 .menu-item,
 .submenu-item {
   width: 100%;
-  padding: 12px 20px;
   cursor: pointer;
+}
+
+.dropdown-toggle {
+  padding: 12px 20px;
 }
 
 :is(.menu-item, .submenu-item):first-child {
@@ -117,4 +121,10 @@ li,
   visibility: visible;
   opacity: 1;
   translate: 8px 0;
+}
+
+@layer utilities {
+  .link {
+    @apply w-full block py-[12px] px-[20px];
+  }
 }

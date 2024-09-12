@@ -24,29 +24,29 @@ const DropdownMenu = () => {
          </button>
 
          <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-            <li className='menu-item'><Link href='#'>Italian</Link></li>
-            <li className='menu-item'><Link href='#'>Chinese</Link></li>
+            <li className='menu-item'><Link className='link' href='/italians'>Italians</Link></li>
+            <li className='menu-item'><Link className='link' href='/chinese'>Chinese</Link></li>
             <li className='menu-item dropdown'>
-               <Link href='#' className='submenu-toggle'>
+               <Link href='#' className='submenu-toggle link'>
                   <span>Healthy Options</span>
                   <IoMdArrowDropright className='icon' />
                </Link>
                <ul className='submenu'>
                   {/* More Submenu Items */}
-                  <li className='submenu-item'><Link href='#'>Vegetarian</Link></li>
-                  <li className='submenu-item'><Link href='#'>Chicken</Link></li>
+                  <li className='submenu-item'><Link className='link' href='#'>Vegetarian</Link></li>
+                  <li className='submenu-item'><Link className='link' href='#'>Chicken</Link></li>
                </ul>
             </li>
-            <li className='menu-item'><Link href='#'>Mexican</Link></li>
+            <li className='menu-item'><Link className='link' href='#'>Mexican</Link></li>
             <li className='menu-item dropdown'>
-               <Link href='#' className='submenu-toggle'>
+               <Link href='#' className='submenu-toggle link'>
                   <span>Specials</span>
                   <IoMdArrowDropright className='icon' />
                </Link>
                <ul className='submenu'>
                   {/* SubMenu Items */}
-                  <li className='submenu-item'><Link href='#'>Vegetarian</Link></li>
-                  <li className='submenu-item'><Link href='#'>Chicken</Link></li>
+                  <li className='submenu-item'><Link className='link' href='#'>Vegetarian</Link></li>
+                  <li className='submenu-item'><Link className='link' href='#'>Chicken</Link></li>
                </ul>
             </li>
          </ul>
