@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+button,
+li,
+.icon {
+  all: unset;
+  box-sizing: border-box;
+}
+
 #dropdown {
   max-width: 220px;
   /* width: 100%; */
@@ -60,13 +67,6 @@
   visibility: visible;
   opacity: 1;
   translate: 0 12px;
-}
-
-button,
-li,
-.icon {
-  all: unset;
-  box-sizing: border-box;
 }
 
 .submenu {
