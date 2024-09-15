@@ -22,7 +22,7 @@
 
 .menu-item {
   /* width: 100%; */
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .submenu-item {
@@ -87,3 +87,7 @@ li,
   translate: 8px 0;
 }
 
+.link {
+  display: block;
+  width: 100%;
+}
