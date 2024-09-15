@@ -92,4 +92,9 @@ li,
 .link {
   display: block;
   width: 100%;
+  padding: 12px 20px;
+}
+
+.submenu-toggle>span {
+  padding: 12px 20px;
 }

@@ -25,7 +25,7 @@ const DropdownMenu = () => {
 				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Italians</Link></li>
 				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Chinese</Link></li>
 				<li className='bg-slate-500 menu-item submenu-toggle'>
-					<span className='bg-yellow-500'>Drinks</span>
+					<span className='bg-cyan-500'>Drinks</span>
 					<IoMdArrowDropright color='#db8400' className='icon' />
 
 					<ul className='bg-red-500 submenu'>
@@ -37,7 +37,7 @@ const DropdownMenu = () => {
 				</li>
 				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Indians</Link></li>
 				<li className='bg-slate-500 menu-item submenu-toggle'>
-					<span className='bg-yellow-500'>Deserts</span>
+					<span className='bg-cyan-500'>Deserts</span>
 					<IoMdArrowDropright color='#db8400' className='icon' />
 
 					<ul className='bg-red-500 submenu'>
