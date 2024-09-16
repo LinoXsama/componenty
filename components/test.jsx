@@ -14,36 +14,36 @@ const DropdownMenu = () => {
 	};
 
 	return (
-		<main id='dropdown' className='bg-pink-300'>
-			<button className={`border-2 bg-green-400 dropdown-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-				<span className='bg-yellow-500'>Menu</span>
+		<main id='dropdown' className=''>
+			<button className={`dropdown-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+				<span className=''>Menu</span>
 				<IoMdArrowDropdown color='#db8400' className='icon' />
 			</button>
 
-			<ul className={`border-2 bg-blue-500 menu ${isMenuOpen ? 'open' : ''}`}>
+			<ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
 				{/* Menu items */}
-				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Italians</Link></li>
-				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Chinese</Link></li>
-				<li className='bg-slate-500 menu-item submenu-toggle'>
-					<span className='bg-cyan-500'>Drinks</span>
+				<li className='menu-item'><Link href='/' className='link'>Italians</Link></li>
+				<li className='menu-item'><Link href='/' className='link'>Chinese</Link></li>
+				<li className='menu-item submenu-toggle'>
+					<span className=''>Drinks</span>
 					<IoMdArrowDropright color='#db8400' className='icon' />
 
-					<ul className='bg-red-500 submenu'>
+					<ul className='submenu'>
 						{/* Submenu items */}
-						<li className='bg-orange-500 submenu-item'><Link className='bg-purple-500 link' href='/'>Coffee</Link></li>
-						<li className='bg-orange-500 submenu-item'><Link className='bg-purple-500 link' href='/'>Tea</Link></li>
-						<li className='bg-orange-500 submenu-item'><Link className='bg-purple-500 link' href='/'>Hot chocolate</Link></li>
+						<li className='submenu-item'><Link className='link' href='/'>Coffee</Link></li>
+						<li className='submenu-item'><Link className='link' href='/'>Tea</Link></li>
+						<li className='submenu-item'><Link className='link' href='/'>Hot chocolate</Link></li>
 					</ul>
 				</li>
-				<li className='bg-slate-500 menu-item'><Link href='/' className='bg-purple-500 link'>Indians</Link></li>
-				<li className='bg-slate-500 menu-item submenu-toggle'>
-					<span className='bg-cyan-500'>Deserts</span>
+				<li className='menu-item'><Link href='/' className='link'>Indians</Link></li>
+				<li className='menu-item submenu-toggle'>
+					<span className=''>Deserts</span>
 					<IoMdArrowDropright color='#db8400' className='icon' />
 
-					<ul className='bg-red-500 submenu'>
+					<ul className='submenu'>
 						{/* Submenu items */}
-						<li className='bg-orange-500 submenu-item'><Link className='bg-purple-500 link' href='/'>Tiramisu</Link></li>
-						<li className='bg-orange-500 submenu-item'><Link className='bg-purple-500 link' href='/'>Granola</Link></li>
+						<li className='submenu-item'><Link className='link' href='/'>Tiramisu</Link></li>
+						<li className='submenu-item'><Link className='link' href='/'>Granola</Link></li>
 					</ul>
 				</li>
 			</ul>
