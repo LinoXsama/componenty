@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main>
       {/* <DropdownMenu /> */}
-      <DropdownMenu />
+      <div className='flex justify-center items-center h-[100vh]'>
+        {/* <DropdownMenu /> */}
+      </div>
     </main>
   );
 }

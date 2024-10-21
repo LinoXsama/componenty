@@ -17,7 +17,7 @@ const DropdownMenu = () => {
 		<main id='dropdown' className=''>
 			<button className={`dropdown-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
 				<span className=''>Menu</span>
-				<IoMdArrowDropdown color='#db8400' className='icon' />
+				<IoMdArrowDropdown className='icon' />
 			</button>
 
 			<ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
