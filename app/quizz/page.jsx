@@ -4,15 +4,6 @@ import { useEffect, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { SlashIcon } from "@radix-ui/react-icons";
-import {
-   Breadcrumb,
-   BreadcrumbItem,
-   BreadcrumbLink,
-   BreadcrumbList,
-   BreadcrumbPage,
-   BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
 
 import Image from 'next/image';
 
